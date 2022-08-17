@@ -25,7 +25,7 @@ export default function HomeScreen() {
         ).then(data => {setFeaturedCategories(data)})
     },[])
   return (
-    <SafeAreaView  className='bg-white pt-10'>
+    <SafeAreaView  className='bg-white mt-10'>
       {/* Header */}
       <View className='flex-row pb-3 items-center mx-4 space-x-2'>
         <Image 
