@@ -25,7 +25,11 @@ export default function HomeScreen() {
         ).then(data => {setFeaturedCategories(data)})
     },[])
   return (
-    <SafeAreaView  className='bg-white mt-10'>
+  <>
+    <StatusBar
+        backgroundColor="white"
+        barStyle="dark-content" />
+    <SafeAreaView  className='bg-white'>
       {/* Header */}
       <View className='flex-row pb-3 items-center mx-4 space-x-2'>
         <Image 
@@ -77,6 +81,7 @@ export default function HomeScreen() {
         )}
       </ScrollView>
     </SafeAreaView>
+    </>
   )
 }
 

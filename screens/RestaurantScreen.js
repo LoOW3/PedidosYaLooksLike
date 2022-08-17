@@ -30,7 +30,7 @@ export default function RestaurantScreen({}) {
                 short_description,
                 dishes,
                 long,
-                alt,
+                lat,
         }} = useRoute() //useRoute trae los parametros que hayamos pasado a la screen en paramsz
     
     useEffect(() => {
@@ -44,7 +44,7 @@ export default function RestaurantScreen({}) {
             short_description,
             dishes,
             long,
-            alt,
+            lat,
         }))
     },[dispatch])
 
@@ -53,7 +53,7 @@ export default function RestaurantScreen({}) {
 
         <BasketIcon />
 
-        <ScrollView className='bg-white mt-10'> 
+        <ScrollView className='bg-white'> 
         <View className='relative'>
             <Image 
                 source={{

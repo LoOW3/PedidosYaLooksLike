@@ -15,7 +15,7 @@ export default function RestaurantCard({
   short_description,
   dishes,
   long,
-  alt,
+  lat,
 }) {
   const navigation = useNavigation()
   return (
@@ -30,7 +30,7 @@ export default function RestaurantCard({
         short_description,
         dishes,
         long,
-        alt,
+        lat,
       })}}  
       className="bg-white mr-3 shadow ">
       <Image 
